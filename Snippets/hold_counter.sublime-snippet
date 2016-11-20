@@ -1,8 +1,8 @@
 <snippet>
   <description>Hold Counter</description>
   <content><![CDATA[
-constant COUNTER_SIZE : integer := ${2:12};
-signal ${1:identifier}_sig :  unsigned((COUNTER_SIZE - 1) downto 0);
+constant ${1:identifier}_COUNTER_SIZE : integer := ${2:12};
+signal ${1:identifier}_sig :  unsigned((${1:identifier}_COUNTER_SIZE - 1) downto 0);
 signal ${1:identifier}_en_sig : std_logic;
 signal ${1:identifier}_clear_sig : std_logic;
 
@@ -11,7 +11,7 @@ signal ${1:identifier}_clear_sig : std_logic;
 -----------------------------------------
 ${1:identifier}_inst : entity work.hold_counter 
 generic map(
-	COUNTER_SIZE => COUNTER_SIZE
+	COUNTER_SIZE => ${1:identifier}_COUNTER_SIZE
 )
 port map (
 	clk_in => clk_i,
