@@ -1,7 +1,7 @@
 <snippet>
   <description>Hold Counter</description>
   <content><![CDATA[
-constant COUNTER_SIZE : integer := ${2:size};
+constant COUNTER_SIZE : integer := ${2:12};
 signal ${1:identifier}_sig :  unsigned((COUNTER_SIZE - 1) downto 0);
 signal ${1:identifier}_en_sig : std_logic;
 signal ${1:identifier}_clear_sig : std_logic;
