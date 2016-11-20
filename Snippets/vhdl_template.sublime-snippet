@@ -4,7 +4,7 @@
   <content>
 ------------------------------------------------
 -
-- Created By: $TM_FULLNAME
+- Created By: ${TM_FULLNAMEz}
 -
 -------------------------------------------------
 library ieee ;
@@ -14,8 +14,8 @@ use ieee.numeric_std.all ;
 entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
   port (
     -- inputs
-	clk_i
-	rst_i
+	clk_i : in std_logic;
+	rst_i : in std_logic;
 	-- outputs
 
   ) ;
