@@ -3,9 +3,9 @@
   <scope>source.vhdl</scope>
   <content>
 ------------------------------------------------
--
-- Created By: ${3:$TM_FULLNAME}
--
+--
+-- Created By: ${3:${TM_FULLNAME}}
+--
 -------------------------------------------------
 library ieee ;
 use ieee.std_logic_1164.all ;
