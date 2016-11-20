@@ -4,7 +4,7 @@
   <content>
 ------------------------------------------------
 -
-- Created By: ${TM_FULLNAMEz}
+- Created By: ${TM_FULLNAME}
 -
 -------------------------------------------------
 library ieee ;
