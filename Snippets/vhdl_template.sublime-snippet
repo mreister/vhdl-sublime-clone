@@ -1,15 +1,21 @@
 <snippet>
   <tabTrigger>vhdl</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>library ieee ;
+  <content>
+------------------------------------------------
+-
+- Created By: $TM_FULLNAME
+-
+-------------------------------------------------
+library ieee ;
 use ieee.std_logic_1164.all ;
 use ieee.numeric_std.all ;
 
 entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
   port (
     -- inputs
-	${0:clk_i}
-	${0:rst_i}
+	clk_i
+	rst_i
 	-- outputs
 
   ) ;
