@@ -2,12 +2,16 @@
   <tabTrigger>vhdl</tabTrigger>
   <scope>source.vhdl</scope>
   <content>library ieee ;
-	use ieee.std_logic_1164.all ;
-	use ieee.numeric_std.all ;
+use ieee.std_logic_1164.all ;
+use ieee.numeric_std.all ;
 
 entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
   port (
-	${0:clock}
+    -- inputs
+	${0:clk_i}
+	${0:rst_i}
+	-- outputs
+
   ) ;
 end entity ; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}
 
