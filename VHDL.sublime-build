@@ -1,5 +1,5 @@
 {
     "cmd": ["vivado", "-mode", "batch","-nolog","-nojournal","-source","synth_design_param.tcl","-tclargs","$file"],
-    "path": "/usr/local/bin",
+    "shell": "true",
     "selector": "source.vhd, source.vhdl"
 }
