@@ -5,7 +5,7 @@
 type ${1:RECORD_T}  is record
 	data    : std_logic_vector (7 downto 0);
 	valid 	: std_logic;		
-end record
+end record;
 </content>
   <description>record</description>
 </snippet>

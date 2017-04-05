@@ -1,0 +1,8 @@
+<snippet>
+  <tabTrigger>array_t</tabTrigger>
+  <scope>source.vhdl</scope>
+  <content>
+type ${1:type_array} is array (0 to ${2:SIZE}) of ${3:ARRAY_TYPE};
+</content>
+  <description>array</description>
+</snippet>
