@@ -34,8 +34,8 @@ use ieee.numeric_std.all ;
 entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
   port (
   -- inputs
-	clk_i : in std_logic;
-	rst_i : in std_logic;
+	clk_i         : in std_logic;
+	rst_i         : in std_logic;
 
 	-- outputs
   data_o        : out std_logic_vector(7 downto 0);
