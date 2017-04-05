@@ -7,7 +7,7 @@
 						state_3_${4:identifier},
 						state_4_${5:identifier},
 						state_5_${6:identifier},
-						state_5_${6:identifier});
+						state_6_${7:identifier});
 	SIGNAL state,next_state   : STATE_TYPE;
 
 	-----------------------------------------
@@ -23,7 +23,7 @@
 	-----------------------------------------
 	-- Next State Logic
 	-----------------------------------------
-	next_state_logic : process( state )
+	next_state_logic : process( all )
 	begin
 		next_state <= state;
 		case state is
@@ -40,7 +40,7 @@
 	-----------------------------------------
 	-- Output Logic
 	-----------------------------------------
-	state_output_logic : process( state )
+	state_output_logic : process( all )
 	begin
 		case state is
 			when state_0_${1:identifier} =>

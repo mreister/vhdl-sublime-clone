@@ -1,12 +1,16 @@
 <snippet>
-  <description>State Machine 6 State</description>
+  <description>State Machine 8 State</description>
   <content><![CDATA[
 	TYPE STATE_TYPE IS (state_0_${1:identifier},
 						state_1_${2:identifier},
 						state_2_${3:identifier},
 						state_3_${4:identifier},
 						state_4_${5:identifier},
-						state_5_${6:identifier});
+						state_5_${6:identifier},
+						state_6_${7:identifier},
+						state_7_${8:identifier},
+						state_8_${9:identifier},
+						state_9_${10:identifier});
 	SIGNAL state,next_state   : STATE_TYPE;
 
 	-----------------------------------------
@@ -32,6 +36,10 @@
 			when state_3_${4:identifier} =>
 			when state_4_${5:identifier} =>
 			when state_5_${6:identifier} => 
+			when state_6_${7:identifier} => 
+			when state_7_${8:identifier} =>
+			when state_8_${9:identifier} =>
+			when state_9_${10:identifier} =>
 		end case;
 	end process ; 
 
@@ -47,12 +55,16 @@
 			when state_3_${4:identifier} =>
 			when state_4_${5:identifier} =>
 			when state_5_${6:identifier} => 
+			when state_6_${7:identifier} => 
+			when state_7_${8:identifier} =>
+			when state_8_${9:identifier} =>
+			when state_9_${10:identifier} =>
 		end case;
 	end process ; 
 
 
 ]]></content>
-  <tabTrigger>sm_6</tabTrigger>
+  <tabTrigger>sm_10</tabTrigger>
   <scope>source.vhdl</scope>
 </snippet>
 
