@@ -4,11 +4,11 @@
 ------------------------------------------------------
 -- ${1:identifier}
 ------------------------------------------------------
-${1:identifier} : process( ${2:clock}, ${3:reset} )
+${1:identifier} : process(  ${3:all} )
 begin
   if( ${3:reset} = '1' ) then
     $0
-  elsif( rising_edge(${2:clock}) ) then
+  elsif( rising_edge(${2:clk_i}) ) then
 
   end if ;
 end process ; -- ${1:identifier}

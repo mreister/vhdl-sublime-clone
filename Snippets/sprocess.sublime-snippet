@@ -5,9 +5,9 @@
 ------------------------------------------------------
 -- ${1:identifier}
 ------------------------------------------------------
-${1:identifier} : process( ${2:clock} )
+${1:identifier} : process( ${2:all} )
 begin
-	if( rising_edge(${2:clock}) ) then
+	if( rising_edge(${2:clk_i}) ) then
 		$0
 	end if ;
 end process ; -- ${1:identifier}</content>
