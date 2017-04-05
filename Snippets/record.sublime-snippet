@@ -1,0 +1,11 @@
+<snippet>
+  <tabTrigger>record_t</tabTrigger>
+  <scope>source.vhdl</scope>
+  <content>
+type ${1:RECORD_T}  is record
+	data    : std_logic_vector (7 downto 0);
+	valid 	: std_logic;		
+end record
+</content>
+  <description>record</description>
+</snippet>

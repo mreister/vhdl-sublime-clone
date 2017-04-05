@@ -2,7 +2,7 @@
   <tabTrigger>to_u</tabTrigger>
   <scope>source.vhdl</scope>
   <content>
-to_unsigned(${1:value},${2:length})
+to_unsigned(${1:value},${2:length});
 </content>
   <description>to_unsigned</description>
 </snippet>
