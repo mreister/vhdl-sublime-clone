@@ -3,9 +3,11 @@
   <scope>source.vhdl</scope>
   <content>case( ${1:signal_name} ) is
 
-	when ${2:IDLE} =&gt;
+	when ${2:CASE_0} =&gt;
+	when ${3:CASE_1} =&gt;
+	when ${4:CASE_2} =&gt;
+	when ${5:CASE_3} =&gt;
 		$0
-
 	when others =&gt;
 
 end case ;</content>
