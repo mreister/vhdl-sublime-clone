@@ -40,7 +40,7 @@ architecture ${2:arch} of ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
   signal clk_sig : std_logic := '1';
   signal rst_sig : std_logic := '1';
   constant CLOCK_PERIOD_C : time := 10 ns;
-  constant RESET_PERIOD_C : time := 5*CLOCK_PERIOD_C ns;
+  constant RESET_PERIOD_C : time := 5*CLOCK_PERIOD_C ;
 begin
   
   -------------------------------------------------

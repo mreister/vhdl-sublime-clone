@@ -1,0 +1,16 @@
+<snippet>
+  <description>Function</description>
+  <content><![CDATA[
+-----------------------------------------
+-- ${1:identifier}
+-----------------------------------------
+  function ${1:identifier} ( data : ${2:identifier} )  return   ${3:identifier} is
+    variable data_v : ${3:identifier};
+  begin
+
+  end ${1:identifier};
+]]></content>
+  <tabTrigger>func</tabTrigger>
+  <scope>source.vhdl</scope>
+</snippet>
+
